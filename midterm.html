@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<link rel="stylesheet" href="midterm.css2">
+<style>
+    body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .resume-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .profile-section {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        background-color: #0000ff;
+        background-image: url('data:image/png;base64,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');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .profile-info {
+        flex-grow: 1;
+    }
+
+    .profile-info h1 {
+        font-size: 2em;
+    }
+
+    .profile-info h2 {
+        font-size: 1.5em;
+        color: #666;
+    }
+
+    .social-media-icons {
+    }
+
+    .stats-section, .work-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stat, .work-history, .specialties-section {
+        flex-basis: calc(33% - 10px);
+        text-align: center;
+    }
+
+    .stat h3, .work-history h3, .specialties-section h3 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+     
+</style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="profile-section">
+            <div class="profile-pic"></div>
+            <div class="profile-info">
+                <h1> Ayush Mittal </h1> 
+                <h2>Freelance Web Designer</h2>
+                <p>Get the best website created globally. from the best experts .</p>
+                <div class="social-media-icons">
+                </div>
+            </div>
+        </div>
+        <div class="stats-section">
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Job Success</p>
+            </div>
+        </div>
+        <div class="work-section">
+            <div class="work-history">
+                <h3>Work Experience </h3>
+                <p>50 Plus Brands</p>
+                <div class="profile-body">
+                    <div class="work-history">
+                        <h3>WORK HISTORY</h3>
+                        <p class="hours-worked"><strong>15096</strong> HOURS WORKED</p>
+                        <p class="work-done"><strong>687</strong> WORK DONE</p>
+                        <p class="availability"><strong>30</strong> HOURS WEEKLY AVAILABLE</p>
+                        <p class="response-time"><strong>24</strong> HOUR RESPONSE TIME</p>
+                    </div>
+                    <div class="specialties">
+                        <h3>MY SPECIALTIES</h3>
+                        <p>WORDPRESS THEME DEVELOPMENT</p>
+                        <p>JOOMLA TEMPLATE DEVELOPMENT</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        
+        </body>
+        </html>
+    </body>
+    </html>
+            </div>
+            <div class="specialties-section">
+                <h3>My Specialities</h3>
+                <p>Creative ^-^</p>
+                Responible and Open to feeedback 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
